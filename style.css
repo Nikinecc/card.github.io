@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #292B2C;
+    color: white;
+    font-family: 'KoHo', sans-serif;
+    position: relative;
+}
+
+.container {
+    padding: 0px 100px;
+    text-align: center;
+}
+
+/* Для хэдэра */
+
+.header {
+    height: 100vh;
+    margin-bottom: 90px;
+}
+
+.container.mr-top {
+    padding-top: 40px;
+}
+
+.header-line-holder {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-line-holder a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.header-line-holder a:hover:before {
+    transform: scaleX(1);
+    transition: all .3s;
+}
+
+.header-line-holder a::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #00A3FF;
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.header-info {
+    text-align: left;
+    margin-top: 200px;
+    max-width: 800px;
+}
+
+.header-info-title {
+    color: #FFF;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.header-info-subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.header-info button {
+    border-radius: 40px;
+    background: linear-gradient(126deg, #06A5FF 70%, rgba(3, 199, 243, 0) 100%);
+    box-shadow: 0px 4px 40px 0px rgba(0, 209, 255, 0.51);
+    border: none;
+    color: white;
+    padding: 30px 40px;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 60px;
+}
+
+.header-info-button-subtitle {
+    color: #ADA8A8;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+/* Для кого нужно */
+.about {
+    margin-bottom: 200px;
+}
+
+.about-holder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-holder-item {
+    text-align: left;
+    border-radius: 60px;
+    background: linear-gradient(225deg, #202020 53.99%, rgba(92, 126, 191, 0.00) 100%);
+    box-shadow: 0px 4px 150px 0px rgba(0, 85, 133, 0.30);
+    padding: 40px;
+    width: 350px;
+}
+
+.about-holder-item-number {
+    color: #545454;
+    font-size: 96px;
+    font-weight: 600;
+}
+
+.about-holder-item-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.about-holder-item-title span {
+    color: #0085FF;
+}
+
+.about-holder-item-text {
+    color: #A8A8A8;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+/* Для цены */
+.price {
+    margin-bottom: 90px;
+}
+
+.price-title {
+    color: #0085FF;
+    font-size: 70px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.price-title span {
+    color: white;
+    border-bottom: 3px solid #0085FF;
+    padding-bottom: 30px;
+}
+
+.price-subtitle {
+    color: #A8A8A8;
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 190px;
+}
+
+.price-holder {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-holder-item {
+    border-radius: 50px;
+    text-align: center;
+    background-color: #5B688D;
+    margin-right: 30px;
+    max-width: 340px;
+}
+
+.price-holder-item-head {
+    padding: 40px;
+    border-radius: 50px 50px 0px 0px;
+    background: #293654;
+    text-align: center;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#price-holder-item-head-2 {
+    background: #2F4F93;
+}
+
+#price-holder-item-head-3 {
+    background: #3066CF;
+}
+
+#price-holder-item-head-4 {
+    background: #2F78FF;
+}
+
+.price-holder-info-holder-item {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.price-holder-item-info-logo img {
+    width: 25px;
+    margin-right: 20px;
+}
+
+.price-holder-info-holder {
+    padding: 30px;
+    margin-bottom: 10px;
+    min-height: 468px;
+}
+
+.price-holder-item-price {
+    text-align: center;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.price-holder-item button {
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 300;
+    border-radius: 40px;
+    background: linear-gradient(126deg, #06A5FF 0%, rgba(0, 209, 255, 0.00) 100%);
+    box-shadow: 0px 4px 40px 0px rgba(0, 209, 255, 0.51);
+    border: none;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* стоимость обслуживания */
+.card {
+    margin-bottom: 90px;
+}
+
+.card-title {
+    color: #0085FF;
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.card-title span {
+    color: white;
+    border-bottom: 3px solid #0085FF;
+    padding-bottom: 15px;
+}
+
+.card-subtitle {
+    color: #A8A8A8;
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.card-button button {
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 300;
+    border-radius: 40px;
+    background: #06A5FF;
+    box-shadow: 0px 4px 40px 0px rgba(0, 209, 255, 0.51);
+    border: none;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card-info {
+    border-radius: 50px 50px 50px 0px;
+    background: linear-gradient(180deg, #07A6FC 0%, #060C0E 100%);
+    box-shadow: 0px 4px 400px 0px #06A5FF;
+    padding: 70px;
+}
+
+.card-info-text-title {
+    color: #FFFCFC;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.card-info-text-title span {
+    color: #00F0FF;
+}
+
+.card-info-text-subtitle-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.card-info-text-subtitle-img {
+    margin-right: 10px;
+}
+
+.card-info-text-subtitle-text {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.container iframe {
+    border-radius: 50px;
+}
+
+.sfera {
+    border-radius: 1477px;
+    background: linear-gradient(180deg, #0085FF 0%, rgba(148, 203, 255, 0.00) 100%);
+    filter: blur(100px);
+    width: 1000px;
+    height: 1200px;
+    position: absolute;
+    top: 0px;
+    left: 390px;
+    z-index: -1;
+    overflow: hidden;
+}
+.sfera.price-s{
+    top: 2360px;
+    
+}
+@media(max-width: 1500px){
+    .about-holder-item {
+        width: 250px;
+    }
+}
+@media(max-width: 1410px){
+    .sfera{
+        left: 85px;
+    }
+}
+@media(max-width: 1330px){
+    .price-holder{
+        flex-direction: column;
+    }
+    .price-holder-item{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 1200px){
+    .header-line{
+        display: none;
+    }
+    .about-holder{
+        flex-direction: column;
+    }
+    .about-holder-item{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 1110px){
+    .sfera{
+        left: -440px;
+    }
+    .price-title span, .card-title span {
+        border-bottom: none;
+    }
+}
+@media(max-width: 800px){
+    .header-info-subtitle-item{
+        font-size: 16px;
+    }
+}
+@media(max-width: 720px){
+    .card-title,.price-title {
+        font-size: 50px;
+    }
+}
+@media(max-width: 690px){
+    .header-info-title {
+        font-size: 50px;
+    }
+}
+@media(max-width: 625px){
+    .card-info-text-title {
+        font-size: 50px;
+    }
+}
+@media(max-width: 575px){
+    .card-info-text-title,.card-title,.price-title   {
+        font-size: 30px;
+    }
+    .card-info-text-subtitle-text {
+        font-size: 18px;
+    }
+    .card-subtitle {
+        font-size: 24px;
+    }
+    .container {
+        padding: 0px 30px;
+    }
+    .sfera {
+        left: -650px;
+    }
+}
+@media(max-width: 500px){
+    .header-info-subtitle{
+        display: none;
+    }
+    .header-info button {
+        font-size: 30px;
+    }
+}
